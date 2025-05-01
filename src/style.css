@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layer components{
+    .day-card{
+        @apply flex justify-center items-center bg-sky-500 text-black font-bold font-mono text-2xl md:text-4xl rounded;
+        
+    }
+}
