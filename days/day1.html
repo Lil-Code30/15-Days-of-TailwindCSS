@@ -7,6 +7,199 @@
     <title>Jour 1/15 - Tailwind CSS</title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold bg-amber-500">Hello world!</h1>
+    <!-- componenet that will be reused on all pages -->
+    <nav class="tailwind-banner">
+      <h1 class="tailwind-logo">Jour 1/15 - Tailwind CSS</h1>
+      <p>Les Bases avec une Carte de Profil User</p>
+    </nav>
+
+    <!-- content -->
+    <main
+      class="flex flex-col justify-center items-center gap-1.5 gap-y-5 sm:gap-3 sm:flex-row bg-gray-400/50 pt-2.5 h-screen"
+    >
+      <section
+        class="w-[250px] h-[400px] bg-gray-200 rounded p-2 relative overflow-hidden box-border"
+      >
+        <div class="flex flex-col w-[20px] gap-y-0.5 m-">
+          <div class="w-full h-0.5 rounded bg-black mb-0.5"></div>
+          <div class="w-full h-0.5 rounded bg-black mb-0.5"></div>
+          <div class="w-full h-0.5 rounded bg-black mb-0.5"></div>
+        </div>
+        <img
+          class="size-[200px] rounded-full absolute -right-[50px] -top-[20px]"
+          src="../profile-img01.jpg"
+          alt=""
+        />
+        <div
+          class="absolute w-full flex items-center flex-col gap-y-16 top-[200px]"
+        >
+          <div class="">
+            <h1 class="font-bold font-Martian text-4xl text-amber-950">
+              John Doe
+            </h1>
+            <p class="text-gray-800/50 font-semibold">Web Designer</p>
+            <p class="text-gray-800/50 font-semibold">Paris, France</p>
+          </div>
+          <div class="flex w-[230px] justify-end-safe gap-2">
+            <img
+              class="size-9"
+              src="../icons/icons8-behance-50.png"
+              alt="Behance logo"
+            />
+            <img
+              class="size-9"
+              src="../icons/icons8-x-50.png"
+              alt="Twitter logo"
+            />
+            <img
+              class="size-9"
+              src="../icons/icons8-web-50.png"
+              alt="web logo"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-white rounded-t-4xl rounded-b-2xl w-[500px] md:w-[1000px]"
+      >
+        <div
+          class="h-[150px] rounded-t-4xl bg-linear-to-r/increasing from-indigo-500 to-teal-400"
+        >
+          <div
+            class="bg-white size-8 rounded-full flex justify-center items-center translate-x-[350px] md:translate-x-[550px] translate-y-1/2"
+          >
+            <img
+              class="size-5"
+              src="/icons/icons8-edit-50.png"
+              alt="edit button"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center sm:flex-row sm:justify-between sm:ml-2.5"
+        >
+          <div class="flex-center flex-col -translate-y-20">
+            <div class="bg-white flex-center size-55 sm:size-35 rounded-full">
+              <img
+                class="size-50 sm:size-30 rounded-full object-cover"
+                src="/profile-img01.jpg"
+                alt="Profile image"
+              />
+            </div>
+            <h2 class="font-bold text-3xl sm:text-4xl sm:text-left">
+              John Doe
+            </h2>
+          </div>
+          <div
+            class="-translate-y-15 md:-translate-y-10 md:mr-3 hidden sm:block"
+          >
+            <p class="font-semibold text-gray-500 flex-center gap-1.5">
+              Current role
+              <img
+                class="size-5"
+                src="../icons/icons8-work-25.png"
+                alt="work icon"
+              />
+            </p>
+            <p
+              class="font-bold text-black/80 bg-gray-400/50 rounded-3xl p-1.5 mt-2"
+            >
+              Software Engineer
+            </p>
+          </div>
+        </div>
+        <div
+          class="-translate-y-20 sm:-translate-y-20 flex-center flex-col items-center sm:flex-row sm:justify-between md:px-3"
+        >
+          <div class="middle1 flex-center flex-col sm:text-left">
+            <p class="font-semibold text-[25px] md:text-[20px] text-gray-700">
+              Software Engineer
+            </p>
+            <p class="font-semibold text-gray-500 mb-2 text-center">
+              Los Angeles, California
+            </p>
+            <div class="flex-center gap-2">
+              <button class="bg-indigo-900 text-white px-2 py-1 rounded-full">
+                Edit Profile
+              </button>
+              <button class="px-2 py-1 rounded-full border-2 border-indigo-900">
+                Setting
+              </button>
+            </div>
+          </div>
+          <div class="middle2 flex flex-col">
+            <p
+              class="flex gap-2 md:text-2xl font-semibold text-gray-500 md:justify-end-safe invisible md:visible"
+            >
+              Skills
+              <img
+                class="size-5 md:size-6"
+                src="../icons/icons8-star-25.png"
+                alt=""
+              />
+            </p>
+            <div class="mt-2">
+              <button class="prog-btn">HTML</button>
+              <button class="prog-btn">CSS</button>
+              <button class="prog-btn">JavaScript</button>
+              <button class="prog-btn">C++</button>
+              <button class="prog-btn">UI Design</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="-translate-y-10 md:-translate-y-15 px-2 grid grid-cols-1 md:grid-cols-3 gap-3"
+        >
+          <div
+            class="profile-box"
+            title="Show recruiters that you're ready for work"
+          >
+            <div>
+              <h3>Ready for work</h3>
+              <p class="line-clamp-2">
+                Show recruiters that you're ready for work
+              </p>
+            </div>
+            <img
+              src="../icons/icons8-arrow-35.png"
+              class="size-[35px]"
+              alt="arrow icon"
+            />
+          </div>
+          <div
+            class="profile-box"
+            title="Share latest news to get connected with others"
+          >
+            <div>
+              <h3>Share posts</h3>
+              <p class="line-clamp-2">
+                Share latest news to get connected with others
+              </p>
+            </div>
+            <img
+              src="../icons/icons8-arrow-35.png"
+              class="size-[35px]"
+              alt="arrow icon"
+            />
+          </div>
+          <div
+            class="profile-box"
+            title="Keep your profile updated so that recruiterscan know you better"
+          >
+            <div>
+              <h3>Update</h3>
+              <p class="line-clamp-2">
+                Keep your profile updated so that recruiterscan know you better
+              </p>
+            </div>
+            <img
+              src="../icons/icons8-arrow-35.png"
+              class="size-[35px]"
+              alt="arrow icon"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
