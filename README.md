@@ -7,7 +7,7 @@ Chaque jour, un nouveau projet → Un nouveau concept → Plus de maîtrise de T
 ## 🔴 Rejoindre les Lives
 
 Les sessions sont diffusées en direct sur ma chaîne YouTube :  
-👉🔴 [**15 Days of Tailwind CSS**](https://youtube.com/playlist?list=PLCfWsbfoICpvXxtkBrAqPydi04raxaxg_&si=_DkZClrXZkuY-fV0)
+👉 [**15 Days of Tailwind CSS**](https://youtube.com/playlist?list=PLCfWsbfoICpvXxtkBrAqPydi04raxaxg_&si=_DkZClrXZkuY-fV0)
 
 ## 📅 Planning des Lives
 
