@@ -9,6 +9,14 @@
     padding: 0;
     box-sizing: border-box;
 } */
+
+@theme{
+    --font-Martian: 'Martian Mono', monospace;
+
+    --color-primary: oklch(45.7% 0.24 277.023);
+
+    --shadow-md: 4px 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+}
  @layer base{
     h3{
         @apply font-bold font-Martian text-2xl md:font-semibold;
@@ -31,10 +39,33 @@
     .profile-box{
         @apply bg-gray-400/50 rounded-2xl px-2 py-1 h-[100px] md:h-[150px] flex justify-between items-center;
     }
+    .button-card{
+        @apply bg-gray-200 h-[150px] flex justify-center items-center ;
+    }
+    .button3{
+        box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.107), 5px 5px 50px 30px var(--color-primary), inset 0 30px 30px oklch(45.7% 0.24 277.023);
+    }
+    .button3:hover{
+        box-shadow: 0 0 30px 10px oklch(45.7% 0.24 277.023);
+    }
+    .button5{
+        box-shadow: 5px 0 3px #7df9ff, 8px 0 3px  #0b36c3;  
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 31% 100%, 0 68%); */
+    }
+    .button7{
+        box-shadow: 5px 5px white, 8px 8px black;
+    }
+    .button7:hover{
+        box-shadow: 5px 5px black;
+    }
+    .button9{
+        box-shadow: -5px -5px oklch(50.5% 0.213 27.518);
+    }
+    .button9:hover{
+        box-shadow: -3px -2px oklch(50.5% 0.213 27.518);
+    }
 }
-@theme{
-    --font-Martian: 'Martian Mono', monospace;
-}
+
 
 @utility flex-center{
     @apply flex justify-center items-center;
