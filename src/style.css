@@ -2,12 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
 
-/* *,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* *{
+    border: 1px solid green;
+    margin: 1px;
 } */
 
 @theme{
@@ -17,6 +14,7 @@
 
     --shadow-md: 4px 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.3);
     --shadow-button-hover: 16px 16px 40px var(--color-pink), -16px -16px 40px var(--color-pink);
+
 }
  @layer base{
     h3{
@@ -70,6 +68,18 @@
     }
     .button10:hover{
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgb(255, 255, 255);
+    }
+    .form-div{
+        @apply w-full flex flex-col;
+    }
+    .login-label{
+        @apply font-black font-mono text-[20px] mb-1;
+    }
+    .form-input{
+        @apply bg-gray-300/50 rounded focus:outline-hidden p-1 focus:border-b-amber-500 focus:border-b-2;
+    }
+    .rate-box{
+        @apply  border-1 border-gray-500 rounded p-1 font-semibold flex items-center gap-x-1 hover:border-2 hover:border-indigo-500/50 hover:bg-indigo-400/50
     }
     
 }

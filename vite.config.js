@@ -14,6 +14,7 @@ export default defineConfig({
         day1: resolve(__dirname, "days/day1.html"),
         day2: resolve(__dirname, "days/day2.html"),
         day3: resolve(__dirname, "days/day3.html"),
+        day3_1: resolve(__dirname, "days/day3-1.html"),
         day4: resolve(__dirname, "days/day4.html"),
         day5: resolve(__dirname, "days/day5.html"),
         day6: resolve(__dirname, "days/day6.html"),

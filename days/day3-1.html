@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jour 3-1/15 - Tailwind CSS</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <nav class="flex md:flex-row justify-between px-3 border-b-1 py-2.5">
+      <div class="flex gap-x-2 justify-around items-center">
+        <a href="day3.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+        </a>
+        <h3 class="text-gray-600">Informations🤓</h3>
+      </div>
+      <div class="flex gap-x-2 justify-around items-center">
+        <div class="border-1 border-blue-700 shadow-sm px-2 py-1 rounded">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5 stroke-blue-700"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+            />
+          </svg>
+        </div>
+        <div class="border-1 border-blue-700 shadow-sm px-2 py-1 rounded">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5 stroke-blue-700"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+            />
+          </svg>
+        </div>
+        <button class="bg-blue-700 text-white px-3 py-1 rounded">
+          Confirm
+        </button>
+      </div>
+    </nav>
+    <main
+      class="w-full flex flex-col md:flex-row-reverse items-center justify-center p-2"
+    >
+      <section
+        class="w-full sm:size-fit p-3 md:border-1 rounded md:self-start md:mt-3"
+      >
+        <h3 class="text-gray-700 text-xl text-center mb-1">Profile photo</h3>
+        <div class="m-auto relative w-20">
+          <figure
+            class="rounded-full bg-pink-400 size-20 sm:size-30 flex-center"
+          >
+            <img
+              class="sm:size-20"
+              src="../public/icons8-avatar-50.png"
+              alt="icon-avatar"
+            />
+          </figure>
+          <div
+            class="bg-blue-700 size-7 flex-center rounded-full absolute right-0 sm:-right-8 bottom-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              class="size-4 stroke-amber-50"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="my-3 flex flex-col justify-center items-center">
+          <label class="font-bold text-black/80" for="interest">
+            Choose your main interest</label
+          >
+          <select
+            class="border-2 rounded size-fit"
+            name="interest"
+            id="interest"
+          >
+            <option value="" selected>Select</option>
+            <option value="education">Education 👨‍🎓</option>
+            <option value="science">Yeeeah, science 👨‍🔬</option>
+            <option value="art">Art 🎨</option>
+            <option value="politics">Politics 👨‍💼</option>
+            <option value="sport">Sport 🏀</option>
+            <option value="games">Games 🎮</option>
+            <option value="animals">Animals 🐶</option>
+            <option value="health">Health 🏥</option>
+            <option value="business">Business 👨‍💼</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <fieldset
+          class="flex justify-center size-fit items-center gap-2 m-auto"
+        >
+          <legend class="text-black/80 font-bold">Select your gender</legend>
+          <div class="flex">
+            <input type="radio" name="gender" id="male" />
+            <label class="ml-1 font-semibold" for="male">Male</label>
+          </div>
+          <div class="flex">
+            <input type="radio" name="gender" id="female" />
+            <label class="ml-1 font-semibold" for="female">Female</label>
+          </div>
+          <div class="flex">
+            <input type="radio" name="gender" id="non-binary" />
+            <label class="ml-1 font-semibold" for="non-binary"
+              >Non-binary</label
+            >
+          </div>
+        </fieldset>
+      </section>
+      <section class="m-2 md:w-2/3">
+        <div>
+          <h2 class="text-2xl text-gray-600 font-bold">User Information</h2>
+          <p class="text-gray-500 font-medium mb-3">
+            Enter the required informations below to register. You can change it
+            anytime you want.
+          </p>
+        </div>
+        <div class="flex flex-col gap-2 mb-1.5">
+          <label class="font-bold text-black/80" for="email"
+            >Email address</label
+          >
+          <input
+            class="md:w-2/3 border-2 user-invalid:border-red-600 p-0.5 rounded font-semibold"
+            type="email"
+            id="email"
+            name="email"
+            value=""
+            placeholder="username@domain.com"
+          />
+          <p class="flex items-center text-red-500 text-sm">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+              />
+            </svg>
+            <span>
+              Please enter and email addresse in the fomat username@domain.com
+            </span>
+          </p>
+        </div>
+        <fieldset
+          class="md:w-2/3 border-1 p-2 rounded flex justify-between gap-x-1.5 mb-1.5"
+        >
+          <legend class="font-bold text-black/80">Full Name</legend>
+          <div class="flex flex-col w-1/2">
+            <label class="text-black/50 font-semibold" for="first-name"
+              >First Name</label
+            >
+            <input
+              class="border-1 rounded p-0.5 pl-1"
+              type="text"
+              id="first-name"
+              name="first-name"
+            />
+          </div>
+          <div class="flex flex-col w-1/2">
+            <label class="text-black/50 font-semibold" for="last-name"
+              >Last Name</label
+            >
+            <input
+              class="border-1 rounded p-0.5 pl-1"
+              type="text"
+              id="last-name"
+              name="last-name"
+            />
+          </div>
+        </fieldset>
+        <div class="md:w-2/3 mb-2">
+          <label class="font-bold text-black/80">Address</label>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 sm:gap-x-2 gap-y-2 sm:col"
+          >
+            <select
+              class="border-1 rounded text-black py-1"
+              id="city"
+              name="city"
+            >
+              <option value="">Select City</option>
+              <option value="Abitibi-Témiscamingue">
+                Abitibi-Témiscamingue
+              </option>
+              <option value="Acton Vale">Acton Vale</option>
+              <option value="Adstock">Adstock</option>
+              <option value="Albanel">Albanel</option>
+              <option value="Alma">Alma</option>
+              <option value="Amos">Amos</option>
+              <option value="Amqui">Amqui</option>
+              <option value="Ange-Gardien">Ange-Gardien</option>
+              <option value="Asbestos">Asbestos</option>
+              <option value="Baie-Comeau">Baie-Comeau</option>
+              <option value="Baie-D'Urfé">Baie-D'Urfé</option>
+              <option value="Baie-Saint-Paul">Baie-Saint-Paul</option>
+              <option value="Barraute">Barraute</option>
+              <option value="Bas-Saint-Laurent">Bas-Saint-Laurent</option>
+              <option value="Beaconsfield">Beaconsfield</option>
+              <option value="Beauceville">Beauceville</option>
+              <option value="Beauharnois">Beauharnois</option>
+              <option value="Beaupré">Beaupré</option>
+              <option value="Bécancour">Bécancour</option>
+              <option value="Bedford">Bedford</option>
+              <option value="Beloeil">Beloeil</option>
+              <option value="Berthierville">Berthierville</option>
+              <option value="Blainville">Blainville</option>
+              <option value="Bois-des-Filion">Bois-des-Filion</option>
+              <option value="Boisbriand">Boisbriand</option>
+              <option value="Bonaventure">Bonaventure</option>
+              <option value="Boucherville">Boucherville</option>
+              <option value="Breakeyville">Breakeyville</option>
+              <option value="Bromont">Bromont</option>
+              <option value="Brossard">Brossard</option>
+              <option value="Brownsburg-Chatham">Brownsburg-Chatham</option>
+              <option value="Buckingham">Buckingham</option>
+              <option value="Cabano">Cabano</option>
+              <option value="Cacouna">Cacouna</option>
+              <option value="Candiac">Candiac</option>
+              <option value="Cantley">Cantley</option>
+              <option value="Cap-Chat">Cap-Chat</option>
+            </select>
+            <select
+              class="border-1 py-1 border-gray-400 rounded text-black/40 bg-gray-400/40"
+              id="city"
+              name="city"
+              disabled
+            >
+              <option value="">Select City</option>
+              <option value="Abitibi-Témiscamingue">
+                Abitibi-Témiscamingue
+              </option>
+              <option value="Acton Vale">Acton Vale</option>
+              <option value="Adstock">Adstock</option>
+              <option value="Albanel">Albanel</option>
+              <option value="Alma">Alma</option>
+              <option value="Amos">Amos</option>
+              <option value="Amqui">Amqui</option>
+              <option value="Ange-Gardien">Ange-Gardien</option>
+              <option value="Asbestos">Asbestos</option>
+              <option value="Baie-Comeau">Baie-Comeau</option>
+              <option value="Baie-D'Urfé">Baie-D'Urfé</option>
+              <option value="Baie-Saint-Paul">Baie-Saint-Paul</option>
+              <option value="Barraute">Barraute</option>
+              <option value="Bas-Saint-Laurent">Bas-Saint-Laurent</option>
+              <option value="Beaconsfield">Beaconsfield</option>
+              <option value="Beauceville">Beauceville</option>
+              <option value="Beauharnois">Beauharnois</option>
+              <option value="Beaupré">Beaupré</option>
+              <option value="Bécancour">Bécancour</option>
+              <option value="Bedford">Bedford</option>
+              <option value="Beloeil">Beloeil</option>
+              <option value="Berthierville">Berthierville</option>
+              <option value="Blainville">Blainville</option>
+              <option value="Bois-des-Filion" selected>Bois-des-Filion</option>
+              <option value="Boisbriand">Boisbriand</option>
+              <option value="Bonaventure">Bonaventure</option>
+              <option value="Boucherville">Boucherville</option>
+              <option value="Breakeyville">Breakeyville</option>
+              <option value="Bromont">Bromont</option>
+              <option value="Brossard">Brossard</option>
+              <option value="Brownsburg-Chatham">Brownsburg-Chatham</option>
+              <option value="Buckingham">Buckingham</option>
+              <option value="Cabano">Cabano</option>
+              <option value="Cacouna">Cacouna</option>
+              <option value="Candiac">Candiac</option>
+              <option value="Cantley">Cantley</option>
+              <option value="Cap-Chat">Cap-Chat</option>
+            </select>
+            <input
+              class="border-1 py-1 pl-0.5 rounded"
+              type="number"
+              id="rue"
+            />
+            <input
+              class="border-1 py-1 pl-0.5 rounded sm:col-span-3 text-black"
+              type="text"
+              id="street"
+              placeholder="Street"
+              value=""
+            />
+          </div>
+        </div>
+        <div>
+          <label class="font-bold text-black/80">Hourly rate</label>
+          <div class="grid grid-cols-2 gap-1 mb-2 md:w-2/3">
+            <div class="rate-box">
+              <input
+                class="accent-indigo-800"
+                type="radio"
+                name="hourly-rate"
+                id="rate-ten-to-twenty"
+              />
+              <label for="rate-ten-to-twenty">$10-$20</label>
+            </div>
+            <div class="rate-box">
+              <input
+                class="accent-indigo-800"
+                type="radio"
+                name="hourly-rate"
+                id="rate-twenty-to-forthy"
+              />
+              <label for="rate-twenty-to-forthy">$20-$40</label>
+            </div>
+            <div class="rate-box">
+              <input
+                class="accent-indigo-800"
+                type="radio"
+                name="hourly-rate"
+                id="rate-forthy-to-eigthy"
+              />
+              <label for="rate-forthy-to-eigthy">$40-$80</label>
+            </div>
+            <div class="rate-box">
+              <input
+                class="accent-indigo-800"
+                type="radio"
+                name="hourly-rate"
+                id="rate-above-eigthy"
+              />
+              <label for="rate-above-eigthy">&gt;$80</label>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col md:w-2/3">
+          <label class="font-bold text-black/80">Choose your skills</label>
+          <select
+            class="border-1 border-gray-600 rounded"
+            name="skills"
+            id="skills"
+            multiple
+          >
+            <option class="pl-1" value="engineering">Engineering</option>
+            <option class="pl-1" value="architecture">Architecture</option>
+            <option class="pl-1" value="3d-printing-expert">
+              3D Prinitng Expert
+            </option>
+          </select>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
