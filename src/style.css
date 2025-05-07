@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+
 
 /* *{
     border: 1px solid green;
@@ -9,11 +14,16 @@
 
 @theme{
     --font-Martian: 'Martian Mono', monospace;
+    --font-Stalinist: "Stalinist One", sans-serif;
+    --font-Funnel: "Funnel Sans", sans-serif;
+
     --color-primary: oklch(45.7% 0.24 277.023);
     --color-pink: oklch(59.2% 0.249 0.584); 
 
     --shadow-md: 4px 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.3);
     --shadow-button-hover: 16px 16px 40px var(--color-pink), -16px -16px 40px var(--color-pink);
+
+    --breakpoint-md: 56rem;  
 
 }
  @layer base{
@@ -27,7 +37,7 @@
         
     }
     .tailwind-banner{
-        @apply flex flex-col md:flex-row justify-around bg-violet-950 text-amber-50 font-bold text-center p-4 sm:text-2xl  font-mono;
+        @apply flex flex-col md:flex-row justify-around bg-violet-950 text-amber-50 font-bold text-center p-4 sm:text-2xl  font-mono mb-2.5;
     }
     .tailwind-logo{
         @apply text-amber-700 font-bold;
@@ -79,7 +89,10 @@
         @apply bg-gray-300/50 rounded focus:outline-hidden p-1 focus:border-b-amber-500 focus:border-b-2;
     }
     .rate-box{
-        @apply  border-1 border-gray-500 rounded p-1 font-semibold flex items-center gap-x-1 hover:border-2 hover:border-indigo-500/50 hover:bg-indigo-400/50
+        @apply  border-1 border-gray-500 rounded p-1 font-semibold flex items-center gap-x-1 hover:border-2 hover:border-indigo-500/50 hover:bg-indigo-400/50 has-checked:border-indigo-500/50 has-checked:bg-indigo-400/50 
+    }
+    .nav-link{
+        @apply pl-1.5 font-semibold text-[20px] last-of-type:border-b-0 border-b-2 md:border-b-0 w-full hover:bg-indigo-400 rounded  md:mx-2 md:text-center md:px-2 transition ease-in duration-300 md:duration-500 font-Funnel;
     }
     
 }
