@@ -4,14 +4,296 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
-    <title>Jour 2/15 - Tailwind CSS</title>
+    <title>Jour 5/15 - Tailwind CSS</title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold text-violet-900">Hello world!</h1>
-    <div
-      class="flex justify-around items-center gap-4 h-[65px] bg-violet-950 mb-2.5"
+    <nav class="tailwind-banner">
+      <p><a href="../index.html">&larr; Retour à l'accueil</a></p>
+      <h1 class="tailwind-logo">Jour 5/15 - Tailwind CSS</h1>
+      <p>Galerie Photo Responsive + Effets Hover</p>
+    </nav>
+    <header
+      class="flex justify-between md:justify-around items-center px-3 mb-3"
     >
-      <p class="text-3xl font-bold text-violet-50">Tailwind CSS</p>
-    </div>
+      <h1 class="font-Funnel font-extrabold text-3xl md:text-4xl">St.</h1>
+      <nav class="flex gap-2">
+        <ul
+          class="inline-flex items-center gap-3 font-Funnel font-semibold mr-2.5"
+        >
+          <li>
+            <a
+              class="pb-1 px-1.5 hover:border-b-4 hover:border-b-blue-700 transition duration-500 ease-in"
+              href="#"
+              >Collections</a
+            >
+          </li>
+          <li>
+            <a
+              class="pb-1 px-1.5 hover:border-b-4 hover:border-b-blue-700 transition duration-500 ease-in"
+              href=""
+              >Popular Photos</a
+            >
+          </li>
+        </ul>
+        <button
+          class="bg-blue-700 text-white font-Funnel font-semibold px-2 py-1 rounded hover:bg-white hover:border-blue-700 hover:border-2 hover:text-blue-700 transition duration-500 ease-in"
+        >
+          Submit Photos
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="flex flex-col md:flex-row justify-center w-full md:w-2/3 mx-auto items-center gap-3 mt-5 mb-4 px-3 md:px-0 md:h-auto"
+      >
+        <div class="self-start md:justify-self-start">
+          <h1 class="font-Funnel font-extrabold text-3xl md:text-4xl">
+            Free Stock Here
+          </h1>
+          <p class="font-Funnel text-gray-500 font-semibold">
+            Best stock photos
+          </p>
+        </div>
+        <div
+          class="hidden md:grid md:grid-cols-3 gap-4 grid-rows-[150px_100px_100px_150px]"
+        >
+          <div class="col-span-2">
+            <img
+              class="banner-img"
+              src="https://cdn.pixabay.com/photo/2022/11/05/19/56/bachalpsee-7572681_640.jpg"
+              alt=""
+            />
+          </div>
+          <div class="row-span-3">
+            <img
+              class="banner-img"
+              src="https://cdn.pixabay.com/photo/2025/03/31/21/30/italy-9505446_1280.jpg"
+              alt=""
+            />
+          </div>
+          <div class="row-span-2 col-span-2">
+            <img
+              class="banner-img"
+              src="https://cdn.pixabay.com/photo/2025/04/24/01/29/trees-9554107_1280.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="banner-img"
+              src="https://cdn.pixabay.com/photo/2025/04/30/00/51/purple-leaf-plum-9568184_1280.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-span-2">
+            <img
+              class="banner-img"
+              src="https://cdn.pixabay.com/photo/2022/03/30/22/05/easter-7101862_1280.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="w-full px-2.5 grid gap-2.5 grid-cols-2 md:grid-cols-4">
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2024/02/16/14/20/snail-8577681_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2023/07/01/18/21/water-8100724_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2015/08/05/21/22/silver-bordered-fritillary-877121_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2018/04/16/16/16/sunset-3325080_640.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2022/11/06/09/21/forest-7573541_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2022/12/31/12/20/wildflowers-7688547_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2024/02/02/03/42/seagull-8547189_640.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2023/07/08/19/28/leaves-8115077_640.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2021/12/11/15/01/nature-6862942_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2023/09/22/16/31/donkey-cart-8269449_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2019/10/29/14/46/landscape-4587079_640.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2023/09/27/12/15/river-8279466_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2024/02/09/14/54/butterfly-8563213_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2023/01/08/05/52/sunset-7704594_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2023/09/27/12/15/river-8279466_640.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2024/12/28/05/28/sydney-9295243_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2024/12/28/13/28/tram-9296118_640.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2023/08/06/18/37/sunset-8173575_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2023/11/05/21/04/alps-8368328_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2016/10/22/17/46/mountains-1761292_640.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2022/01/17/06/38/altai-6943982_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2021/11/06/16/11/greece-6773683_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2022/08/08/19/36/landscape-7373484_640.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2022/03/04/14/19/nature-7047433_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270_640.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="gallery-img"
+              src="https://cdn.pixabay.com/photo/2018/02/02/17/29/nature-3125912_640.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

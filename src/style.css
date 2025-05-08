@@ -94,6 +94,12 @@
     .nav-link{
         @apply pl-1.5 font-semibold text-[20px] last-of-type:border-b-0 border-b-2 md:border-b-0 w-full hover:bg-indigo-400 rounded  md:mx-2 md:text-center md:px-2 transition ease-in duration-300 md:duration-500 font-Funnel;
     }
+    .banner-img{
+        @apply h-auto md:h-full md:w-full rounded-lg object-cover;
+    }
+    .gallery-img{
+        @apply h-full object-cover max-w-full rounded-lg grayscale transition duration-500 ease-in-out hover:grayscale-0 hover:cursor-pointer;
+    }
     
 }
 
