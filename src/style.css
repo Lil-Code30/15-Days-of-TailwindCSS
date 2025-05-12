@@ -112,6 +112,12 @@
     .e-health-img{
         @apply rounded-2xl;
     }
+    .e-health-text{
+        @apply flex flex-col gap-y-2 justify-center items-center text-center
+    }
+    .our-story-div{
+        @apply border-2 border-indigo-700 grid grid-cols-2 p-1.5 rounded;
+    }
 }
 
 

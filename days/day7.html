@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="../src/style.css" />
     <title>Jour 7/15 - Tailwind CSS</title>
   </head>
   <body class="">
@@ -106,13 +106,13 @@
             </svg>
           </span>
         </button>
-        <section>
+        <div>
           <img
             class="rounded-3xl"
             src="../ai-generated-8846456_1280.png"
             alt=""
           />
-        </section>
+        </div>
       </section>
     </header>
     <main class="px-3 py-2">
@@ -125,13 +125,15 @@
           iste vitae nostrum labore suscipit beatae nam unde.
         </p>
         <div
-          class="w-full grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-3"
+          class="w-full grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-3 mb-3"
         >
           <div>
             <img class="e-health-img" src="https://fakeimg.pl/600x400" alt="" />
-            <div>
-              <p>Lorem ipsum dolor</p>
-              <p>
+            <div class="e-health-text">
+              <p class="font-Funnel text-2xl font-semibold">
+                Lorem ipsum dolor
+              </p>
+              <p class="font-Funnel">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.amet
                 consectetur.
               </p>
@@ -139,9 +141,11 @@
           </div>
           <div>
             <img class="e-health-img" src="https://fakeimg.pl/600x400" alt="" />
-            <div>
-              <p>Lorem ipsum dolor</p>
-              <p>
+            <div class="e-health-text">
+              <p class="font-Funnel text-2xl font-semibold">
+                Lorem ipsum dolor
+              </p>
+              <p class="font-Funnel">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.amet
                 consectetur.
               </p>
@@ -149,9 +153,11 @@
           </div>
           <div>
             <img class="e-health-img" src="https://fakeimg.pl/600x400" alt="" />
-            <div>
-              <p>Lorem ipsum dolor</p>
-              <p>
+            <div class="e-health-text">
+              <p class="font-Funnel text-2xl font-semibold">
+                Lorem ipsum dolor
+              </p>
+              <p class="font-Funnel">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.amet
                 consectetur.
               </p>
@@ -159,28 +165,33 @@
           </div>
         </div>
       </section>
-      <section>
-        <h3>our story</h3>
-        <h2>
+      <section class="flex flex-col justify-center items-center">
+        <h3 class="font-Funnel font-extrabold text-3xl md:text-5xl text-center">
+          our story
+        </h3>
+        <h2 class="text-3xl font-Funnel text-center py-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          rerum maiores neque laboriosam, fuga vitae minima in ex, illo error
-          nihil sint temporibus deserunt tempore voluptates facilis voluptatum
-          tempora assumenda.
+          rerum maiores neque laboriosam
         </h2>
-        <div>
-          <img
-            src="../public/bethesda-naval-medical-center-80380_1280.jpg"
-            alt=""
-          />
-          <div>
-            <div>
-              <h4>17,8M</h4>
-              <span>
+        <div class="flex flex-col md:flex-row gap-y-2 gap-x-2.5">
+          <div class="md:w-1/2">
+            <img
+              class="rounded-2xl"
+              src="../public/bethesda-naval-medical-center-80380_1280.jpg"
+              alt=""
+            />
+          </div>
+          <div class="w-full md:w-1/2 flex flex-col gap-y-2">
+            <div class="our-story-div">
+              <h4 class="font-Funnel text-3xl font-extrabold">17,8M</h4>
+              <span
+                class="justify-self-end-safe flex justify-center items-center border-1 border-indigo-600 rounded-full p-1.5 bg-indigo-300/50 text-indigo-700"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  class="size-6"
+                  class="size-7"
                 >
                   <path
                     fill-rule="evenodd"
@@ -192,11 +203,15 @@
                   />
                 </svg>
               </span>
-              <p>User Selected</p>
+              <p class="col-span-2 font-Funnel text-2xl text-gray-700">
+                User Selected
+              </p>
             </div>
-            <div>
-              <h4>100%</h4>
-              <span>
+            <div class="our-story-div">
+              <h4 class="font-Funnel text-3xl font-extrabold">100%</h4>
+              <span
+                class="justify-self-end-safe flex justify-center items-center border-1 border-indigo-600 rounded-full p-1.5 bg-indigo-300/50 text-indigo-700"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -215,11 +230,15 @@
                   />
                 </svg>
               </span>
-              <p>Lorem ipsum</p>
+              <p class="col-span-2 font-Funnel text-2xl text-gray-700">
+                Lorem ipsum
+              </p>
             </div>
-            <div>
-              <h4>1,2K</h4>
-              <span>
+            <div class="our-story-div">
+              <h4 class="font-Funnel text-3xl font-extrabold">1,2K</h4>
+              <span
+                class="justify-self-end-safe flex justify-center items-center border-1 border-indigo-600 rounded-full p-1.5 bg-indigo-300/50 text-indigo-700"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -231,11 +250,15 @@
                   />
                 </svg>
               </span>
-              <p>Lorem ipsum</p>
+              <p class="col-span-2 font-Funnel text-2xl text-gray-700">
+                Lorem ipsum
+              </p>
             </div>
-            <div>
-              <h4>20+</h4>
-              <span>
+            <div class="our-story-div">
+              <h4 class="font-Funnel text-3xl font-extrabold">20+</h4>
+              <span
+                class="justify-self-end-safe flex justify-center items-center border-1 border-indigo-600 rounded-full p-1.5 bg-indigo-300/50 text-indigo-700"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -252,31 +275,41 @@
                   />
                 </svg>
               </span>
-              <p>Lorem ipsum</p>
+              <p class="col-span-2 font-Funnel text-2xl text-gray-700">
+                Lorem ipsum
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <h2>Let's Realize Your Health Anytime, Anywhere!</h2>
-        <button>
-          <span>Learn More</span>
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="size-6"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </span>
-        </button>
-      </section>
     </main>
+    <footer
+      class="bg-linear-to-r from-indigo-400 via-indigo-600 to-indigo-400 rounded-t-2xl py-5 mt-2 flex flex-col justify-center items-center text-white font-Funnel"
+    >
+      <h2 class="text-3xl md:text-4xl text-center">
+        Let's Realize Your Health Anytime, Anywhere!
+      </h2>
+      <button
+        class="bg-white text-indigo-700 rounded-full flex items-center justify-center p-1.5 mt-2 font-Funnel font-bold"
+      >
+        <span>Contact Us</span>
+        <span class="bg-indigo-700 rounded-full ml-1.5 text-white p-0.5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="3"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </span>
+      </button>
+    </footer>
   </body>
 </html>
