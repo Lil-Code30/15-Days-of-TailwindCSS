@@ -100,7 +100,18 @@
     .gallery-img{
         @apply h-full object-cover max-w-full rounded-lg grayscale transition duration-500 ease-in-out hover:grayscale-0 hover:cursor-pointer;
     }
-    
+    .sidebar-link{
+        @apply flex gap-x-1.5 p-2 text-gray-800 hover:bg-blue-400/50 hover:text-blue-800 hover:font-bold rounded transition duration-500 ease-in-out;
+    }
+    .active{
+        @apply bg-blue-400/50 text-blue-800 font-bold rounded;
+    }
+    .sidebar-link-text{
+        @apply hidden md:block transition duration-500 ease-in;
+    }
+    .e-health-img{
+        @apply rounded-2xl;
+    }
 }
 
 
