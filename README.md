@@ -25,8 +25,8 @@ Les sessions sont diffusées en direct sur ma chaîne YouTube :
 | 10   | **Page de Tarification**                              |
 | 11   | **Une Page 404 Personnalisée**                        |
 | 12   | **Layout de Dashboard Admin**                         |
-| 13   | **Analyse et Codage d'un Layout Réel**                |
-| 14   | **Le Dark Mode**                                      |
+| 13   | **Le Dark Mode**                                      |
+| 14   | **Analyse et Codage d'un Layout Réel**                |
 | 15   | **Portfolio Final - Le Grand Assemblage**             |
 
 ## 🎯 Objectifs du Défi
