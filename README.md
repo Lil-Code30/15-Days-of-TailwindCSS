@@ -1,4 +1,4 @@
-# 🚀 15 Jours de Live Coding Tailwind CSS
+# 🚀 15 Jours de Live Coding TailwindCSS v4
 
 Une série de live coding où nous construisons, chaque jour, un composant ou une section d'interface en utilisant uniquement **Tailwind CSS**.
 
