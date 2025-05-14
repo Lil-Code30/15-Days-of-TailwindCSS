@@ -118,6 +118,33 @@
     .our-story-div{
         @apply border-2 border-indigo-700 grid grid-cols-2 p-1.5 rounded;
     }
+    .testimonial-box{
+        @apply bg-white text-black rounded-md font-Funnel p-3 shadow-md border-2 border-b-5;
+    }
+    .testimonial-star-box{
+        @apply flex
+    }
+    .testimonial-star-fill{
+        @apply fill-amber-400;
+    }
+    .testimonial-star-empty{
+        @apply fill-black/80;
+    }
+    .testimonial-text{
+        @apply text-left font-Funnel;
+    }
+    .testimonial-profile-box{
+        @apply flex gap-2 mt-2;
+    }
+    .testimonial-pp{
+        @apply size-10 rounded-full object-cover;
+    }
+    .testimonial-profile-name{
+        @apply font-Funnel font-bold;
+    }
+    .testimonial-profile-title{
+        @apply font-Funnel text-gray-600 -mt-1.5;
+    }
 }
 
 
