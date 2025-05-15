@@ -30,6 +30,9 @@
     h3{
         @apply font-bold font-Martian text-2xl md:font-semibold;
     }
+    ul{
+        @apply list-inside;
+    }
  }
 @layer components{
     .day-card{
@@ -144,6 +147,49 @@
     }
     .testimonial-profile-title{
         @apply font-Funnel text-gray-600 -mt-1.5;
+    }
+    .plan-box{
+        @apply border-2 border-gray-500/50 rounded-lg p-5;
+    }
+    .price-box{
+        @apply flex gap-x-1
+    }
+    .price-value{
+        @apply font-Funnel font-extrabold;
+    }
+    .price-value h2{
+        @apply text-2xl
+    }
+    .price-value h1{
+        @apply text-6xl
+    }
+    .price-box p{
+        @apply self-end-safe text-gray-500 font-Funnel font-medium;
+    }
+    .plan-description{
+        @apply font-Funnel mt-1.5 text-[16px] md:text-[20px]
+    }
+    .plan-button{
+        @apply font-Funnel font-semibold border-2 w-full rounded-md my-1.5 py-1.5 border-gray-500/50 hover:bg-gray-300/50; 
+    }
+    .plan-box ul{
+        @apply my-1.5 font-Funnel;
+    }
+    .plan-box ul li{
+        @apply underline decoration-1 decoration-wavy text-lg;
+    }
+    .notion-ai-box{
+        @apply bg-gray-200/50 mt-2 p-3 rounded-md;
+        
+    }
+    .notion-ai{
+        @apply flex gap-1 items-center;
+    }
+    .notion-ai img{
+        @apply size-5;
+    }
+    .notion-ai span{
+        @apply font-Funnel font-extrabold text-lg;
     }
 }
 
