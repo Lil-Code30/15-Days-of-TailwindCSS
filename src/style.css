@@ -35,6 +35,12 @@
     ul{
         @apply list-inside;
     }
+    th{
+        @apply px-3 max-w-[250px];
+    }
+    td{
+        @apply border-b-2 border-gray-500 pt-1 pb-2 px-3 font-Funnel align-top ;
+    }
  }
 @layer components{
     .day-card{
@@ -192,6 +198,9 @@
     }
     .notion-ai span{
         @apply font-Funnel font-extrabold text-lg;
+    }
+    tr th:first-of-type, tr td:first-of-type{
+        @apply w-1/3;
     }
 }
 
