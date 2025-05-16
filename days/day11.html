@@ -4,14 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
-    <title>Jour 2/15 - Tailwind CSS</title>
+    <title>Jour 11/15 - Tailwind CSS</title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold text-violet-900">Hello world!</h1>
-    <div
-      class="flex justify-around items-center gap-4 h-[65px] bg-violet-950 mb-2.5"
-    >
-      <p class="text-3xl font-bold text-violet-50">Tailwind CSS</p>
-    </div>
+    <nav class="tailwind-banner">
+      <p><a href="../index.html">&larr; Retour à l'accueil</a></p>
+      <h1 class="tailwind-logo">Jour 11/15 - Tailwind CSS</h1>
+      <p>Une Page 404 Personnalisée</p>
+    </nav>
+    <main class="relative h-[90vh] bg-amber-50">
+      <div
+        class="flex flex-col md:flex-row-reverse justify-center items-center p-3 gap-x-3"
+      >
+        <h1
+          class="md:w-2/3 text-center font-Rubik text-shadow-lg py-3 text-shadow-red-500 font-extrabold text-6xl sm:text-7xl md:text-8xl"
+        >
+          404 <br />
+          Not Found
+        </h1>
+        <div class="flex items-center md:items-start flex-col gap-2">
+          <h2 class="text-3xl font-extrabold font-Funnel">
+            We've lost this page
+          </h2>
+          <p class="text-center md:text-left font-Funnel text-lg">
+            Sorry, the page you are looking for doesn't exist or has been moved.
+          </p>
+          <a
+            href="../index.html"
+            class="bg-indigo-600 hover:bg-transparent hover:border-2 hover:border-indigo-600 hover:text-indigo-600 text-white rounded font-Funnel px-2 py-1 transition duration-500 ease-in"
+          >
+            Go back to Home Page
+          </a>
+        </div>
+      </div>
+      <div class="absolute bottom-0 right-0 left-0 mx-auto size-fit">
+        <img class="w-full" src="../not-hear-2688007_640.png" alt="" />
+      </div>
+    </main>
   </body>
 </html>

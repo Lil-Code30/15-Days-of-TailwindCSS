@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
 
 @import "tailwindcss";
 
@@ -16,6 +17,7 @@
     --font-Martian: 'Martian Mono', monospace;
     --font-Stalinist: "Stalinist One", sans-serif;
     --font-Funnel: "Funnel Sans", sans-serif;
+    --font-Rubik: "Rubik Iso", system-ui;
 
     --color-primary: oklch(45.7% 0.24 277.023);
     --color-pink: oklch(59.2% 0.249 0.584); 
