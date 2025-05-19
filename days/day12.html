@@ -1,17 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
-    <title>Jour 2/15 - Tailwind CSS</title>
+    <title>Jour 12/15 - Tailwind CSS</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold text-violet-900">Hello world!</h1>
-    <div
-      class="flex justify-around items-center gap-4 h-[65px] bg-violet-950 mb-2.5"
-    >
-      <p class="text-3xl font-bold text-violet-50">Tailwind CSS</p>
-    </div>
+  <body class="dark:bg-black/80 bg-amber-50/50">
+    <nav class="tailwind-banner">
+      <p><a href="../index.html">&larr; Retour à l'accueil</a></p>
+      <h1 class="tailwind-logo">Jour 12/15 - Tailwind CSS</h1>
+      <p>Le Dark Mode</p>
+    </nav>
+    <main class="px-2.5 md:px-0 md:w-1/2 mx-auto pb-3">
+      <nav class="flex justify-around items-center mb-3">
+        <h1
+          class="font-Funnel text-3xl text-violet-700 dark:text-violet-400 font-extrabold"
+        >
+          &lt;LiCode30/&gt;
+        </h1>
+        <button id="change-theme" class="flex border-1 rounded">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            id="sun"
+            class="size-6 hidden stroke-black dark:stroke-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            id="moon"
+            class="size-6 stroke-black dark:stroke-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+            />
+          </svg>
+        </button>
+      </nav>
+      <section>
+        <div>
+          <h2 class="font-Funnel text-2xl dark:text-pink-400 text-pink-700">
+            Lorem, ipsum dolor sit amet.
+          </h2>
+          <p class="text-black dark:text-amber-50 font-Funnel">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            inventore nisi expedita ducimus et dolor dolorem ullam consequatur
+            placeat eum vitae voluptate harum dolores saepe sapiente, temporibus
+            tenetur. Repudiandae, voluptatem!
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-3 gap-2.5">
+          <div
+            class="bg-pink-700 p-1.5 rounded font-Funnel text-pink-50 shadow-md dark:shadow-md dark:shadow-pink-100"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt
+              debitis possimus asperiores quasi? Iste, aut inventore amet
+              delectus odit nostrum ipsum vel in quisquam? Accusamus, sint
+              asperiores! Sunt, quos!
+            </p>
+          </div>
+          <div
+            class="bg-pink-700 p-1.5 rounded font-Funnel text-pink-50 shadow-md dark:shadow-md dark:shadow-pink-100"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt
+              debitis possimus asperiores quasi? Iste, aut inventore amet
+              delectus odit nostrum ipsum vel in quisquam? Accusamus, sint
+              asperiores! Sunt, quos!
+            </p>
+          </div>
+          <div
+            class="bg-pink-700 p-1.5 rounded font-Funnel text-pink-50 shadow-md dark:shadow-md dark:shadow-pink-100"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt
+              debitis possimus asperiores quasi? Iste, aut inventore amet
+              delectus odit nostrum ipsum vel in quisquam? Accusamus, sint
+              asperiores! Sunt, quos!
+            </p>
+          </div>
+          <div
+            class="bg-pink-700 p-1.5 rounded font-Funnel text-pink-50 shadow-md dark:shadow-md dark:shadow-pink-100"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sunt
+              debitis possimus asperiores quasi? Iste, aut inventore amet
+              delectus odit nostrum ipsum vel in quisquam? Accusamus, sint
+              asperiores! Sunt, quos!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/src/script.js"></script>
   </body>
 </html>
