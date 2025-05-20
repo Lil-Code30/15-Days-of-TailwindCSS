@@ -203,6 +203,63 @@
     tr th:first-of-type, tr td:first-of-type{
         @apply w-1/3;
     }
+    .menu-content{
+        @apply flex flex-col mt-2 gap-y-2.5 ;
+    }
+    .menu-content li{
+        @apply self-start border-1 rounded-md  w-full;
+    }
+    .menu-link{
+        @apply flex justify-center md:justify-start text-3xl md:text-lg gap-1.5 items-center px-1 rounded  py-0.5  hover:text-black hover:bg-gray-500/50 hover:border-b-4 transition duration-500 ease-in-out justify-self-center w-full ;
+    }
+    .dashboard-articles{
+        @apply grid grid-cols-2 lg:grid-cols-4 gap-2 mb-2;
+    }
+    .dashboard-article-box{
+        @apply border-1 border-gray-500 shadow w-full font-Funnel rounded p-2;
+    }
+    .dashboard-article-title{
+        @apply flex items-center gap-x-0.5 text-[15px] font-bold text-gray-700;
+    }
+    .dashboard-article-amount{
+        @apply text-[28px] font-extrabold
+    }
+    .dashboard-article-stats{
+        @apply flex items-center justify-between mt-2;
+    }
+    .dashboard-article-growth{
+        @apply px-1 rounded-full font-semibold text-green-600 bg-green-200/50 border-green-200 border;
+    }
+    .dashboard-article-pastDays{
+        @apply flex items-center gap-x-0.5 font-semibold;
+    }
+    .dashboard-chart-box{
+        @apply border-1 rounded p-1.5
+    }
+    .chart-box-content{
+        @apply flex justify-between items-center font-Funnel;
+    }
+    .chart-box-infos p{
+        @apply font-bold text-gray-600;
+    }
+    .chart-box-infos h2{
+        @apply font-extrabold text-2xl;
+    }
+    .chart-box-content button{
+        @apply flex items-center self-start text-gray-700 font-semibold border-1 gap-0.5 px-1 border-gray-700 rounded;
+    }
+    .user-table tr{
+        @apply hover:bg-indigo-300/50;
+    }
+    .user-table tr td{
+        @apply px-0 py-1.5 align-middle;
+    }
+    .user-delete-btn svg{
+        @apply stroke-red-500 stroke-1;
+    }
+    .user-edit-btn svg{
+        @apply stroke-amber-500
+    }
 }
 
 
